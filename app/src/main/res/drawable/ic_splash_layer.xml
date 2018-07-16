@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:centerColor="@color/colorAccent"
+                android:endColor="@color/colorPrimary"
+                android:startColor="@color/colorPrimaryDark"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <item
+        android:width="130dp"
+        android:height="130dp"
+        android:bottom="150dp"
+        android:top="150dp"
+        android:start="100dp"
+        android:end="100dp"
+        android:gravity="center"
+        android:drawable="@drawable/ic_teleprompter_24dp"/>
+
+</layer-list>

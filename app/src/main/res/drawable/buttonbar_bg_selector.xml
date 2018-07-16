@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:exitFadeDuration="@integer/anim_duration"
+    android:enterFadeDuration="@integer/anim_duration">
+
+    <item android:drawable="@drawable/buttonbar_bg_enabled" android:state_enabled="true" />
+    <item android:drawable="@drawable/buttonbar_bg_disabled" />
+
+</selector>

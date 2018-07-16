@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fecf00</color>
+    <color name="colorPrimaryDark">#988c55</color>
+    <color name="colorAccent">#257737</color>
+    <color name="colorText">#b9d1a3</color>
+
+    <color name="colorPrimDarkSemiTransp">#CC988c55</color>
+    <color name="colorWhiteSemiTransp">#AAFFFFFF</color>
+
+    <color name="textColorPrimary">#354526</color>
+    <color name="textColorSecondary">#ffee53</color>
+    <color name="textColorTertiary">#354526</color>
+
+    <color name="material_white">#ffffff</color>
+    <color name="snackbar_connot_remove">#ffff00</color>
+
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="orange">#FFA500</color>
+    <color name="black">#000000</color>
+    <color name="blue">#03A9F4</color>
+    <color name="green">#00FF00</color>
+
+    <string-array name="color_choices">
+        <item>#F44336</item>
+        <item>#FF8880</item>
+        <item>#E91E63</item>
+        <item>#FF80AA</item>
+        <item>#9C27B0</item>
+        <item>#EC80FF</item>
+        <item>#AE80FF</item>
+        <item>#5E35A6</item>
+        <item>#3F51B5</item>
+        <item>#8093FF</item>
+        <item>#2196F3</item>
+        <item>#80C6FF</item>
+        <item>#03A9F4</item>
+        <item>#80D7FF</item>
+        <item>#009688</item>
+        <item>#80FFF2</item>
+        <item>#4CAF50</item>
+        <item>#80FF84</item>
+        <item>#8BC34A</item>
+        <item>#C3FF80</item>
+        <item>#CDDC39</item>
+        <item>#F2FF80</item>
+        <item>#FFEB3B</item>
+        <item>#FFF280</item>
+        <item>#FFC107</item>
+        <item>#FFDF80</item>
+        <item>#FF5722</item>
+        <item>#FF9D80</item>
+        <item>#FF9800</item>
+        <item>#FFCC80</item>
+        <item>#795548</item>
+        <item>#FFC7B3</item>
+        <item>#607D8B</item>
+        <item>#B3E5FF</item>
+        <item>#FFFFFF</item>
+        <item>#000000</item>
+    </string-array>
+
+</resources>

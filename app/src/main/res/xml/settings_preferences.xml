@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="COLORS">
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+            android:defaultValue="@color/black"
+            android:key="@string/pref_text_color_key"
+            android:summary="@string/pref_text_color_summary"
+            android:title="@string/pref_text_color_label"
+            app:colorChoices="@array/color_choices"
+            app:colorShape="circle"
+            app:numColumns="6"
+            app:showDialog="true"
+            app:viewSize="large" />
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+            android:defaultValue="@color/white"
+            android:key="@string/pref_background_color_key"
+            android:summary="@string/pref_bg_color_summary"
+            android:title="@string/pref_bg_color_label"
+            app:colorChoices="@array/color_choices"
+            app:colorShape="circle"
+            app:numColumns="6"
+            app:showDialog="true"
+            app:viewSize="large" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="FONTS">
+
+        <ListPreference
+            android:entries="@array/fonts"
+            android:entryValues="@array/fonts"
+            android:key="@string/pref_font_key"
+            android:summary="@string/pref_font_summary"
+            android:title="@string/pref_font_label" />
+
+        <com.av.teleprompter.widget.NumberPickerPreference
+            android:key="@string/pref_text_size_key"
+            app:bindSummary="true"
+            android:title="@string/pref_text_size_label"
+            app:maxValue="@integer/pref_text_size_max"
+            app:minValue="@integer/pref_text_size_min"
+            app:startValue="@integer/pref_text_size_default"
+            app:stepValue="@integer/pref_text_size_step" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="OTHERS">
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_mirror_default"
+            android:key="@string/pref_mirror_key"
+            android:summary="@string/pref_mirror_summary"
+            android:title="@string/pref_mirror_label" />
+
+        <com.av.teleprompter.widget.NumberPickerPreference
+            android:key="@string/pref_speed_key"
+            android:title="@string/pref_speed_summary"
+            app:bindSummary="true"
+            app:maxValue="@integer/pref_scroll_speed_max"
+            app:minValue="@integer/pref_scroll_speed_min"
+            app:startValue="@integer/pref_scroll_speed_default"
+            app:stepValue="@integer/pref_scroll_speed_step" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="grid_cols">2</integer>
+    <integer name="pref_scroll_speed_default">50</integer>
+    <integer name="pref_scroll_speed_max">100</integer>
+    <integer name="pref_scroll_speed_min">1</integer>
+    <integer name="pref_scroll_speed_step">1</integer>
+    <integer name="pref_text_size_max">110</integer>
+    <integer name="pref_text_size_min">10</integer>
+    <integer name="pref_text_size_default">50</integer>
+    <integer name="pref_text_size_step">1</integer>
+    <integer name="script_title_max_length">22</integer>
+    <integer name="anim_duration">250</integer>
+</resources>

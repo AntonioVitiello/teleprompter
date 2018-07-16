@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="fonts">
+        <item>Roboto</item>
+        <item>Chonburi</item>
+        <item>CodaCaption</item>
+        <item>Courgette</item>
+        <item>Gaegu</item>
+        <item>Comfortaa</item>
+        <item>Nunito</item>
+        <item>OpenSans</item>
+        <item>Pacifico</item>
+    </array>
+
+    <string-array name="text_size">
+        <item>20</item>
+        <item>24</item>
+        <item>28</item>
+        <item>32</item>
+        <item>36</item>
+        <item>40</item>
+        <item>44</item>
+        <item>48</item>
+        <item>52</item>
+        <item>56</item>
+    </string-array>
+
+    <string-array name="scroll_speed">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>18</item>
+        <item>24</item>
+        <item>28</item>
+        <item>32</item>
+        <item>36</item>
+        <item>40</item>
+        <item>44</item>
+        <item>48</item>
+        <item>52</item>
+        <item>56</item>
+        <item>60</item>
+    </string-array>
+
+</resources>

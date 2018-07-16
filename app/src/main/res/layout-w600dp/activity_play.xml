@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".view.PlayActivity">
+
+    <ScrollView
+        android:id="@+id/play_scroll"
+        android:layout_width="@dimen/max_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/play_script"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/script_body_margin"
+            android:fitsSystemWindows="true"
+            android:paddingBottom="8dp"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="@dimen/detail_body_text_size"
+            tools:text="@string/script_body"/>
+
+    </ScrollView>
+</LinearLayout>
