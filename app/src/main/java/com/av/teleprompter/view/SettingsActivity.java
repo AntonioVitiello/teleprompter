@@ -2,7 +2,6 @@ package com.av.teleprompter.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 
 import com.av.teleprompter.R;
 
@@ -17,14 +16,7 @@ public class SettingsActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        ActionBar actionBar = this.getSupportActionBar();
-
-        // Set the action bar back button to look like an up button
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
-        }
-
+        initActionBar();
     }
 
     @Override

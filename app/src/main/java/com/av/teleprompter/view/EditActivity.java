@@ -18,7 +18,6 @@ import com.av.teleprompter.R;
 import com.av.teleprompter.application.TeleApplication;
 import com.av.teleprompter.data.Script;
 import com.av.teleprompter.data.ScriptContract;
-import com.av.teleprompter.utils.ActionUtils;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 
@@ -54,8 +53,7 @@ public class EditActivity extends BaseActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
         ButterKnife.bind(this);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        initActionBar();
         TeleApplication application = (TeleApplication) getApplication();
         mTracker = application.getDefaultTracker();
 
@@ -104,7 +102,6 @@ public class EditActivity extends BaseActivity implements View.OnClickListener {
         });
 
         checkSaveButton();
-
     }
 
     private void checkSaveButton() {
@@ -192,7 +189,7 @@ public class EditActivity extends BaseActivity implements View.OnClickListener {
                 mResult = RESULT_CANCELED;
         }
 
-        ActionUtils.hideKeyboard(this);
+        hideKeyboard();
         finish();
     }
 

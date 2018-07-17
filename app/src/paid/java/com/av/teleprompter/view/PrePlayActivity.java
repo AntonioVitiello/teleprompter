@@ -47,8 +47,7 @@ public class PrePlayActivity extends BaseActivity {
 
         updateView();
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        initActionBar();
 
     }
 

@@ -63,15 +63,10 @@ public class PrePlayActivity extends BaseActivity {
         Intent intent = getIntent();
         mScript = intent.getParcelableExtra(SCRIPT_EXTRA_KEY);
 
-        initComponents();
+        initActionBar();
         initAdv();
         updateView();
 
-    }
-
-    private void initComponents() {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
     private void initAdv() {

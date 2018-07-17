@@ -32,16 +32,15 @@ public class MainActivity extends BaseActivity implements ScriptAdapter.OnClickL
 
     private static final int SCRIPT_LOADER_ID = 0;
     private static final long IDLE_STATE_DELAY_MILLIS = 3000;
+    private static final String ITEM_POSITION_KEY = "grid_position";
 
     @BindView(R.id.main_recycler_view)
     RecyclerView mRecyclerView;
     @BindView(R.id.toolbar_layout)
     CollapsingToolbarLayout mToolbarLayout;
 
-    // Just for Expresso tests, idling resources will be null in production
-    @Nullable
-    private SimpleIdlingResource mIdlingResource;
     private CustomCursorAdapter mAdapter;
+    private int mClickedPosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,14 +69,6 @@ public class MainActivity extends BaseActivity implements ScriptAdapter.OnClickL
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, final Cursor cursor) {
-
-        Handler handler = new Handler();
-        handler.postDelayed(() -> {
-            if (mIdlingResource != null) {
-                mIdlingResource.setIdleState(true);
-            }
-        }, IDLE_STATE_DELAY_MILLIS);
-
         mAdapter.swapCursor(cursor);
     }
 
@@ -88,12 +79,12 @@ public class MainActivity extends BaseActivity implements ScriptAdapter.OnClickL
 
     @OnClick(R.id.add_fab)
     public void addScript() {
-        Intent intent = new Intent(this, EditActivity.class);
-        startActivity(intent);
+        startActivity(EditActivity.class);
     }
 
     @Override
     public void onClickListener(int position) {
+        mClickedPosition = position;
         ActionUtils.prePlay(mAdapter.getItem(position), this);
     }
 
@@ -122,6 +113,19 @@ public class MainActivity extends BaseActivity implements ScriptAdapter.OnClickL
                 return super.onContextItemSelected(item);
         }
 
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(ITEM_POSITION_KEY, mClickedPosition);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        mClickedPosition = savedInstanceState.getInt(ITEM_POSITION_KEY, 0);
+        mRecyclerView.smoothScrollToPosition(mClickedPosition);
     }
 
 }

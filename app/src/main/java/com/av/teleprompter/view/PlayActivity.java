@@ -72,11 +72,8 @@ public class PlayActivity extends BaseActivity {
         setContentView(R.layout.activity_play);
         ButterKnife.bind(this);
 
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
-        }
+
+        initActionBar();
 
         Intent intent = getIntent();
         mScript = intent.getParcelableExtra(SCRIPT_EXTRA_KEY);

@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Teleprompter</string>
+    <string name="panorama_desc">Teleprompter panorama</string>
 
     <!-- Preferences-->
     <string name="pref_text_color_label">Text Color</string>
@@ -46,5 +47,6 @@
     <string name="menu_modify">Modify</string>
     <string name="menu_delete">Delete</string>
     <string name="menu_settings">Settings</string>
+    <string name="save_button_label">Save</string>
 
 </resources>
